@@ -17,12 +17,21 @@ function soustraction(x) {
     return total;
 }
 
+//divise avec une condition si total = 0 , si c'est le cas attribuer la valeur de x, sinon faire le reste de l'instruction
 function division(x) {
-    total /= x;
-    return total;
+    if (total === 0) {
+        return (total=x);
+    }else { 
+        total /= x;
+        return total;
+    }
 }
 
 function multiplication(x) {
-    total *= x;
-    return total;
+    if (total === 0) {
+        return (total = x);
+    }else {
+        total *= x;
+        return total;
+    }
 }
