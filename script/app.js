@@ -35,3 +35,8 @@ function multiplication(x) {
         return total;
     }
 }
+
+// remettre à zero ma calculatrice
+function reset() {
+    total = 0;
+}
