@@ -21,7 +21,7 @@
 // function division(x) {
 //     if (total === 0) {
 //         return (total=x);
-//     }else { 
+//     }else {
 //         total /= x;
 //         return total;
 //     }
@@ -45,23 +45,22 @@
 const buttons = document.querySelectorAll(".btn");
 const result = document.getElementById("result");
 
-/**Pour chaque bouton au click récuperer ce qui a ete cliquer 
-*pour ensuite le mettre dans notre calculatrice avec le textContent
-*Avec += on concatene ce qu'on tape
-*/
+/**Pour chaque bouton au click récuperer ce qui a ete cliquer
+ *pour ensuite le mettre dans notre calculatrice avec le textContent
+ *Avec += on concatene ce qu'on tape
+ */
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
-    result.textContent += e.target.id;
-        
-    })
+        result.textContent += e.target.id;
+    });
 });
 
 //avec eval ca permet de calculer tout ce qu'on met à l'interieur
-equal.addEventListener('click', () => {
+equal.addEventListener("click", () => {
     result.textContent = eval(result.textContent);
-})
+});
 
 //clear la calculatrice avec l'événement click ect...
-clear.addEventListener('click', () => {
-    result.textContent ="";
-})
+clear.addEventListener("click", () => {
+    result.textContent = "";
+});
